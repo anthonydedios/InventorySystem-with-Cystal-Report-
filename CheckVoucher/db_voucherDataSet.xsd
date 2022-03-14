@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="db_voucherDataSet" targetNamespace="http://tempuri.org/db_voucherDataSet.xsd" xmlns:mstns="http://tempuri.org/db_voucherDataSet.xsd" xmlns="http://tempuri.org/db_voucherDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="db_voucherConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="db_voucherConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CheckVoucher.Properties.Settings.GlobalReference.Default.db_voucherConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_voucherTableAdapter" GeneratorDataComponentClassName="tbl_voucherTableAdapter" Name="tbl_voucher" UserDataComponentName="tbl_voucherTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="db_voucherConnectionString (Settings)" DbObjectName="db_voucher.tbl_voucher" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Date`, `Payee`, `Amountinwords`, `Amount`, `Accountspayable`, `Vat`, `Witholdingtax`, `Preparedby`, `Verifiedby`, `Approvedby`, `Bankname`, `Receivedby`, `Cashinbankcompany`, `Cashinbank`, `Totaldebit`, `Totalcredit` FROM `tbl_voucher`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="db_voucherDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="db_voucherDataSet" msprop:Generator_UserDSName="db_voucherDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_voucher" msprop:Generator_TableClassName="tbl_voucherDataTable" msprop:Generator_TableVarName="tabletbl_voucher" msprop:Generator_TablePropName="tbl_voucher" msprop:Generator_RowDeletingName="tbl_voucherRowDeleting" msprop:Generator_RowChangingName="tbl_voucherRowChanging" msprop:Generator_RowEvHandlerName="tbl_voucherRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_voucherRowDeleted" msprop:Generator_UserTableName="tbl_voucher" msprop:Generator_RowChangedName="tbl_voucherRowChanged" msprop:Generator_RowEvArgName="tbl_voucherRowChangeEvent" msprop:Generator_RowClassName="tbl_voucherRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
